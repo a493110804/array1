@@ -5,19 +5,20 @@
 //  Created by 魏新宇 on 15/12/2.
 //  Copyright © 2015年 魏新宇. All rights reserved.
 //
-
+//
 #include <iostream>
-using namespace std;
-int main(int argc, const char * argv[]) {
+int main(int argc, const char * argv[])
+{
     // insert code here...
-    int a[3]={1,2,3};
-    int b[4];
-    int i;
-    for(i=1;i<100;i++)
-    {
-        b[i]=i;
-    }
-    printf("%d   %d   %d\n",a[0],a[1],a[2]);
-    printf("%x      %x\n",a,b);
+    int a[2];
+    int b[3];
+    a[0]=12;
+    a[1]=15;
+    a[2]=25;
+    b[0]=2;
+    b[1]=3;
+    b[2]=4;
+    printf("%x %x %x",&a[0],&a[1],&a[2]);
+    printf("%x %x %x",&b[0],&b[1],&b[2]);
     return 0;
 }
